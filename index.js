@@ -6,7 +6,7 @@ const computerMove = require('./computerMove.js')
 app.use(express.json());
 
 app.get('/', (req, res) => {
-	res.send('skibbot online!');
+	res.send('skibbot online');
 });
 
 app.post('/', (req, res) => {
