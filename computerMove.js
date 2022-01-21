@@ -16,8 +16,11 @@ const computerMove = (body) => {
     //console.log(resultabpd2);
     console.log(resultabp);
     
+if (resultabp.length > 1){
     return [resultabp[1][0], resultabp[1][1]]
-
+} else {
+    return [null, null]
+}
     //random move:
 }
 

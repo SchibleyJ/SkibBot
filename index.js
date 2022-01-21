@@ -1,9 +1,13 @@
 const express = require('express');
 const app = express();
-const port = 8081;
+const port = 8082;
 const computerMove = require('./computerMove.js')
 
 app.use(express.json());
+
+app.get('/', (req, res) => {
+	res.send('skibbot online!');
+});
 
 app.post('/', (req, res) => {
     let computerResponse = computerMove(req.body);
